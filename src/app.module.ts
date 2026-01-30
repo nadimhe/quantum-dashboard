@@ -160,7 +160,7 @@ export class AppController {
             btn.style.opacity = "0.7";
             
             try {
-                const response = await fetch('http://127.0.0.1:5000/simulate?qubits=' + qInput.value);
+                const response = await fetch('https://quantum-backend-mydb.onrender.com/simulate?qubits=' + qInput' + qInput.value);
                 const data = await response.json();
                 renderChart(data);
             } catch (err) {
